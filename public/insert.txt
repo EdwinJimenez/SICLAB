@@ -1,0 +1,11 @@
+db.catalogoBodegas.insert({"nombreBodega":"Big Cool","descripcionBodega":"Construida hermeticamente, por lo que se encuentra aislada termicamente del exterior y con un equipo de refrigeración capaz de extraer el calor generado por el producto almacenado.","precio":"$4,500.00","largo":1000,"ancho":1000,"alto":1000,"imagenBodega":"img/bodega_refrigerada.jpg","estatus":"A","especificaciones":"Refrigerada","direccionBodega":{"calle":"Carretera Culiacan-Navolato","colonia":"Aguaruto","numero":262,"pais":"Mexico","estado":"Sinaloa","ciudad":"Culiacan"}})
+
+db.catalogoBodegas.update({_id:70d9e22faeb7c789f8214dbd},{$set"nombreBodega":"Big Dry","descripcionBodega":"Bodega en donde se guardan los granos y semillas a temperatura ambiente.","precio":"$2,500.00","largo":1000,"ancho":1000,"alto":1000,"imagenBodega":"img/planta_Holanda.jpg","estatus":"A","especificaciones":"Bodega Seca","direccionBodega":{"calle":"Jose Nuñez","colonia":"Balbuena","numero":257,"pais":"Mexico","estado":"Sinaloa","ciudad":"Navolato"}})
+
+db.usuarios.insert({"nombreUsuario":"nombreUsuario","contraseña": "contraseña","nombre":"nombre","apellido":"apellido","correo":"correo","telefono": "telefono","estatus":"V","esEmpleado":"SI","direccionUsuario": {"calle": "calle","colonia":"colonia","rfc":"rfc","pais":"pais","estado":"estado","ciudad": "ciudad"}})
+
+db.usuarios.insert({"nombreUsuario":"nombreUsuario","contraseña": "contraseña","nombre":"nombre","apellido":"apellido","correo":"correo","telefono": "telefono","estatus":"V","esEmpleado":"SI","direccionUsuario": {"calle": "calle","colonia":"colonia","rfc":"rfc","pais":"pais","estado":"estado","ciudad": "ciudad"}})
+
+db.catalogoBodegas.update("2d2e22d869ab30d90cb3605d",{$set:{nombre:"Judith",descripcion:"descripcion",precio:"precio",largo:"largo",ancho:"ancho",alto:"alto",especificaciones:"especificaciones",direccion: {calle:"calle",colonia:"colonia",numero:"numeroExt",numeroInterior:"numeroInt",pais:"pais",estado:"estado",ciudad:"ciudad"}}});
+	}
+db.catalogoBodegas.update({nombre:"hola"},{$set:{nombre:"Judith",direccion: {calle:"calle",colonia:"colonia",numero:"numeroExt",numeroInterior:"numeroInt",pais:"pais",estado:"estado",ciudad:"ciudad"}}});

@@ -1,0 +1,23 @@
+<template name='layout'>
+	<header>
+		<div class="row">
+			<div class="col s6">
+				<h3>Control de Laboratorios</h3>
+			</div>
+			<div class="col s2 offset-s4" id="logo">
+				<img class="materialboxed col s12" src="img/Logo2.png">
+			</div>
+		</div>
+	</header>
+	<div id="contenidoDinamico">
+		{{> yield}}
+	</div>
+	<footer>
+		<small>
+			Utilice <a href="http://www.google.com.mx/intl/es-419/chrome/" target="_blank">Google Chrome</a> para una mejor experiencia. <br>
+			© Sistema de Control de Laboratorios. Versión. 0.0.1<br>
+			Coordinación de Desarrollo de Sistemas <br> Centro de Cómputo. <br>
+			Instituto Tecnológico de Culiacán. &nbsp;<div id="fecha_sistema">2015</div>
+		</small>
+	</footer>
+</template>

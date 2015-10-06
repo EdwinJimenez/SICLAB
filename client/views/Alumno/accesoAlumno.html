@@ -1,0 +1,95 @@
+<template name="accesoAlumno">
+	<form id="accesoAlumno">
+		<div class="row">
+			<div class="row">
+				<div class="col s3 offset-s10">
+					<div class="switch" id="swtInternoExterno">
+						<label>
+							Off
+							<input type="checkbox">
+							<span class="lever"></span>
+							On
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="col s2">
+				<p>
+					<img class="materialboxed col s12" src="img/persona.png">
+				</p>
+			</div>
+			<section class="col s5">      
+				<div class="row">
+					<div class="input-field col s12">
+						<input id="num_control" type="text" class="validate" autofocus>
+						<label for="num_control">Número de control</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s12">
+						<input id="nombre" type="text" class="validate">
+						<label for="nombre">Nombre</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s12">
+						<input id="carrera" type="text" class="validate">
+						<label for="carrera">Carrera</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s12">
+						<input id="semestre" type="number" class="validate">
+						<label for="semestre">Semestre</label>
+					</div>
+				</div>
+			</section>
+			<div class="col s5" id="tecladoNumerico">
+				<div class="row filaNumeros">
+					<p>
+						<a class="waves-effect waves-light btn-large light-blue darken-1 col s2 offset-s1">1</a>
+					</p>
+					<p>
+						<a class="waves-effect waves-light btn-large light-blue darken-1 col s2 offset-s2">2</a>
+					</p>
+					<p>
+						<a class="waves-effect waves-light btn-large light-blue darken-1 col s2 offset-s2">3</a>
+					</p>
+				</div>
+				<div class="row filaNumeros">
+					<p>
+						<a class="waves-effect waves-light btn-large light-blue darken-1 col s2 offset-s1">4</a>
+					</p>
+					<p>
+						<a class="waves-effect waves-light btn-large light-blue darken-1 col s2 offset-s2">5</a>
+					</p>
+					<p>
+						<a class="waves-effect waves-light btn-large light-blue darken-1 col s2 offset-s2">6</a>
+					</p>
+				</div>
+				<div class="row filaNumeros">
+					<p>
+						<a class="waves-effect waves-light btn-large light-blue darken-1 col s2 offset-s1">7</a>
+					</p>
+					<p>
+						<a class="waves-effect waves-light btn-large light-blue darken-1 col s2 offset-s2">8</a>
+					</p>
+					<p>
+						<a class="waves-effect waves-light btn-large light-blue darken-1 col s2 offset-s2">9</a>
+					</p>
+				</div>
+				<div class="row filaNumeros">
+					<p>
+						<a class="waves-effect waves-light btn-large blue darken-3 col s2 offset-s1">DEL</a>
+					</p>
+					<p>
+						<a class="waves-effect waves-light btn-large light-blue darken-1 col s2 offset-s2">0</a>
+					</p>
+					<p>
+						<a class="waves-effect waves-light btn-large blue darken-3 col s2 offset-s2">MA</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</form>
+</template>

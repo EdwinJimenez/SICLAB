@@ -1,0 +1,116 @@
+<template name="accesoExterno">
+	<section id="accesoExterno">
+		<div class="row">
+			<div class="col s2">Fecha: 01/12/2015</div>	
+			<div class="col s3 offset-s7">
+				<div class="switch">
+					<label>
+						Interno
+						<input type="checkbox">
+						<span class="lever"></span>
+						Externo
+					</label>
+				</div>
+			</div>	
+		</div>
+		<div class="row">
+			<div class="col s2">
+				<img class="responsive-img" src="img/persona.png">
+			</div>
+			<div class="col s5">
+				<form class="col s12">
+					<div class="row">
+						<div class="input-field col s12">
+							<input id="txtNumeroAdmision" type="text" class="validate">
+							<label for="txtNumeroAdmision">No. de admisión</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="input-field col s12">
+							<input id="txtNombre" type="text" class="validate">
+							<label for="txtNombre">Nombre</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="input-field col s12">
+							<input id="txtInstitucion" type="text" class="validate">
+							<label for="txtInstitucion">Institución</label>
+						</div>
+					</div>
+					<div class="row">
+						<select class="browser-default">
+							<option value="" disabled selected>Motivo de uso</option>
+							<option value="1">Option 1</option>
+							<option value="2">Option 2</option>
+							<option value="3">Option 3</option>
+						</select>
+					</div>
+					<div class="row">
+						<div class="switch">
+							<label>Material: &nbsp;</label>
+							<label>
+								Si
+								<input type="checkbox">
+								<span class="lever"></span>
+								No
+							</label>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="col s5" id="tecladoNumerico">
+				<div class="row filaNumeros">
+					<p>
+						<a class="waves-effect waves-light btn-large light-blue darken-1 col s2 offset-s1">1</a>
+					</p>
+					<p>
+						<a class="waves-effect waves-light btn-large light-blue darken-1 col s2 offset-s2">2</a>
+					</p>
+					<p>
+						<a class="waves-effect waves-light btn-large light-blue darken-1 col s2 offset-s2">3</a>
+					</p>
+				</div>
+				<div class="row filaNumeros">
+					<p>
+						<a class="waves-effect waves-light btn-large light-blue darken-1 col s2 offset-s1">4</a>
+					</p>
+					<p>
+						<a class="waves-effect waves-light btn-large light-blue darken-1 col s2 offset-s2">5</a>
+					</p>
+					<p>
+						<a class="waves-effect waves-light btn-large light-blue darken-1 col s2 offset-s2">6</a>
+					</p>
+				</div>
+				<div class="row filaNumeros">
+					<p>
+						<a class="waves-effect waves-light btn-large light-blue darken-1 col s2 offset-s1">7</a>
+					</p>
+					<p>
+						<a class="waves-effect waves-light btn-large light-blue darken-1 col s2 offset-s2">8</a>
+					</p>
+					<p>
+						<a class="waves-effect waves-light btn-large light-blue darken-1 col s2 offset-s2">9</a>
+					</p>
+				</div>
+				<div class="row filaNumeros">
+					<p>
+						<a class="waves-effect waves-light btn-large blue darken-3 col s2 offset-s1">DEL</a>
+					</p>
+					<p>
+						<a class="waves-effect waves-light btn-large light-blue darken-1 col s2 offset-s2">0</a>
+					</p>
+					<p>
+						<a class="waves-effect waves-light btn-large blue darken-3 col s2 offset-s2">MA</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col s5 offset-s4">
+				<button class="btn waves-effect waves-light  green darken-1" type="submit" name="action">Entrar
+				</button>
+				<a class="waves-effect waves-light btn red darken-1">Cancelar</a>
+			</div>
+		</div>
+	</section>
+</template>

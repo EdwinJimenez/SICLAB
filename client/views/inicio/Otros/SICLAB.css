@@ -1,0 +1,118 @@
+body {
+    max-width: 1024px;
+    margin: 0 auto;
+    border-color: blue;
+    border-radius: 5px;
+}
+header{
+	border: 2px solid rgba(3,130,190,0.5);
+	border-radius: 5px 5px 0px 0px;
+  margin-bottom: 2px;
+
+}
+footer
+{
+	border: 2px solid rgba(3,130,190,0.5);
+	border-radius: 0px 0px 5px 5px;
+	text-align: center;
+}
+#contenidoDinamico
+{
+  border: 2px solid rgba(3,130,190,0.5);
+  border-radius: 5px 5px 5px 5px;
+  margin-bottom: 2px; 
+}
+
+#datos
+{
+	border: 2px solid rgba(3,130,190,0.5);
+	border-radius: 5px 5px 0px 0px;
+}
+#principal
+{
+	border: 2px solid rgba(3,130,190,0.5);
+	border-radius: 5px 5px 0px 0px;
+}
+#datosPractica
+{
+	border: 2px solid rgba(3,130,190,0.5);
+	border-radius: 5px 5px 0px 0px;
+	text-align: left;
+	height: 400px;
+  display: none;
+}
+#logo img
+{
+	width: 100%;
+}
+#tecladoNumerico .filaNumeros .btn-large
+{
+	height: 65px;
+    line-height: 4;
+}
+.filaNumeros
+{
+	margin-bottom: 35px;
+}
+/*MATERIALIZE*/
+/* Color del Label de los Inputs tipo TEXT */
+   .input-field label {
+     color: #e0e0e0;
+   }
+   /* Color del label cuando tiene el foco */
+   .input-field input[type=text]:focus + label {
+     color: #42a5f5;
+   }
+   /* Color de la linea del input cuando tiene el focus */
+   .input-field input[type=text]:focus {
+     border-bottom: 1px solid #42a5f5;
+     box-shadow: 0 1px 0 0 #42a5f5;
+   }
+   /* Color para cuando el dato sea valido */
+   .input-field input[type=text].valid {
+     border-bottom: 1px solid #4caf50;
+     box-shadow: 0 1px 0 0 #4caf50;
+   }
+   /* Color para cuando el dato sea invalido */
+   .input-field input[type=text].invalid {
+     border-bottom: 1px solid #f44336;
+     box-shadow: 0 1px 0 0 #f44336;
+   }
+   /*icon prefix focus color*/
+  .input-field .prefix.active {
+    color: #42a5f5;
+  }
+
+   /* Color del label cuando tiene el foco */
+   .input-field input[type=number]:focus + label {
+     color: #42a5f5;
+   }
+   /* Color de la linea del input cuando tiene el focus */
+   .input-field input[type=number]:focus {
+     border-bottom: 1px solid #42a5f5;
+     box-shadow: 0 1px 0 0 #42a5f5;
+   }
+   /* Color para cuando el dato sea valido */
+   .input-field input[type=number].valid {
+     border-bottom: 1px solid #4caf50;
+     box-shadow: 0 1px 0 0 #4caf50;
+   }
+   /* Color para cuando el dato sea invalido */
+   .input-field input[type=number].invalid {
+     border-bottom: 1px solid #f44336;
+     box-shadow: 0 1px 0 0 #f44336;
+   }
+   .switch label
+   {
+   	color:black;
+   }
+.switch label input[type=checkbox]:checked + .lever {
+    background-color: #039be5;
+}
+.switch label input[type=checkbox]:checked + .lever:after {
+    background-color: #039be5;
+}
+   /* icon prefix focus color
+   .input-field .prefix.active {
+     color: #000;
+   } */
