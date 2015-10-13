@@ -1,19 +1,19 @@
 <template name="pantallaMaestro">
 	<div class="row">
-		<div class="col">
+		<div class="col s12">
 			<ul class="tabs">
-				<li class="tabs col s3 active" href="#solicitudes">Solicitudes</li>
-				<li class="tabs col s3" href="#resportes">Reportes</li>
-				<li class="tabs col s3" href="#salir">Salir</li>
+				<li class="tab col s3 active"><a href="#solicitudes">Solicitudes</a></li>
+				<li class="tab col s3"><a href="#resportes">Reportes</a></li>
+				<li class="tab col s3"><a href="#salir">Salir</a></li>
 			</ul>
 		</div>
 	</div>
 	<div id="solicitudes" class="col s12">
 		<div id="menuSolicitudesMaestro">
 			<ul>
-				<a class="waves-effect waves-light btn" id="btnSolicitudesAceptadas"></a>
-				<a class="waves-effect waves-light btn" id="btnSolicitudesPendientes"></a>
-				<a class="waves-effect waves-light btn" id="btnNuevaSolicitud"></a>
+				<a class="waves-effect waves-light btn" id="btnSolicitudesAceptadas">Aceptadas</a>
+				<a class="waves-effect waves-light btn" id="btnSolicitudesPendientes">Pendientes</a>
+				<a class="waves-effect waves-light btn" id="btnNuevaSolicitud">Nueva</a>
 			</ul>
 		</div>
 		<div id="sAceptadasMaestro">
@@ -21,7 +21,7 @@
 			{{> sAceptadasMaestro}}
 		</div>
 		<div id="sPendientesMaestro">
-			<h5>Solicitudes pendientes</h5>
+			<h5 id="etiquetaPendientes">Solicitudes pendientes</h5>
 			{{> sPendientesMaestro}}
 		</div>
 		<div id="sNuevaMaestro">
