@@ -1,5 +1,5 @@
 <template name="sNuevaMaestro">
-	<div class="row">
+	<div class="row" id="principal">
 		<div class="col s12">
 			<div class="row">
 				<div class="input-field col s2">
@@ -44,11 +44,54 @@
 					<textarea id="textarea1" class="materialize-textarea"></textarea>
 					<label for="textarea1">Motivo de uso</label>
 				</div>
+				<div class="col s4">
+					<a class="waves-effect waves-light btn" id="btnElegirMaterial">Elegir material</a>
+				</div>
 			</div>
-			<div class="row">
-				<div class="col s4 offset-s4">
-					<a class="waves-effect waves-light btn" id="btnAceptar">Aceptar</a>
-					<a class="waves-effect waves-light btn" id="btnCancelar">Cancelar</a>
+		</div>
+	</div>
+	<div id="eleccionMaterial">
+		<div class="row">
+			<div class="col s12">
+				<div class="row">
+					<div class="input-field col s4 offset-s1">
+						<input placeholder="Nombre del artículo" id="txtNombreArticulo" type="text" class="validate">
+						<label for="txtNombreArticulo">Nombre del artículo</label>
+					</div>
+					<div class="col s3">
+						<a class="waves-effect waves-light btn"><i class="material-icons left">search</i>Buscar</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col s10 offset-s1">
+						<table class="bordered">
+							<thead>
+								<tr>
+									<th data-field="txtCantidad" class="col s2">Cantidad</th>
+									<th data-field="txtDescripcion" class="col s6">Descripción</th>
+									<th data-field="txtDescripcion" class="col s2">Seleccionar</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="col s2">1</td>
+									<td class="col s6">Osciloscopio</td>
+									<td class="col s2">
+										<p>
+											<input type="checkbox" class="filled-in" id="chbSeleccionar1" />
+											<label for="chbSeleccionar1"></label>
+										</p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col s4 offset-s4">
+						<a class="waves-effect waves-light btn" id="btnFinalizar">Finalizar</a>
+						<a class="waves-effect waves-light btn" id="btnCancelar">Cancelar</a>
+					</div>
 				</div>
 			</div>
 		</div>
