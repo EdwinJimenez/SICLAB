@@ -27,15 +27,54 @@
 			{{> solicitudesEnProceso}}
 		</div>
 	</div>
-	<div id="laboratorios">
-		<h5>Solicitudes de laboratorio</h5>
-		{{> solicitudesPendientesLaboratorio}}
+	<div id="laboratorios" class="col s12">
+		<div id="menuLaboratorios">
+			<ul>
+				<a class="waves-effect waves-light btn" id="btnPendientesLab">Pendientes</a>
+				<a class="waves-effect waves-light btn" id="btnAceptadasLab">Aceptadas</a>
+			</ul>
+		</div>
+		<div id="sPendientesLab">
+			<h5>Solicitudes de laboratorio</h5>
+			{{> solicitudesPendientesLaboratorio}}
+		</div>
+		<div id="sAceptadasLab">
+			<h5>Solicitudes de laboratorio</h5>
+			{{> solicitudesPendientesLaboratorio}}
+		</div>
 	</div>
 	<div id="inventarios">
-		<h5>Inventario</h5>
-		{{> pantallaInventario}}
+		<div id="menuInventario">
+			<ul>
+				<a class="waves-effect waves-light btn" id="btnArticulos">Articulos</a>
+				<a class="waves-effect waves-light btn" id="btnAlta">Alta</a>
+				<a class="waves-effect waves-light btn" id="btnBaja">Baja</a>
+				<a class="waves-effect waves-light btn" id="btnPeticionesPendientes">Peticiones pendientes</a>
+				<a class="waves-effect waves-light btn" id="btnPeticiónArticulo">Petición artículo</a>
+			</ul>
+		</div>
+		<div id="articulos">
+			<h5>Inventario</h5>
+			{{> pantallaInventario}}
+		</div>
+		<div id="altaArticulos">
+			<h5>Alta de artículos</h5>
+			{{> altaArticulos}}
+		</div>
+		<div id="bajaArticulos">
+			<h5>Baja de artículos</h5>
+			{{> bajaArticulos}}
+		</div>
+		<div id="PeticionesPendientes">
+			<h5>Peticiones pendientes</h5>
+			{{> peticionesPendientes}}
+		</div>
+		<div id="PeticionArticulo">
+			<h5>Peticiones de articulos</h5>
+			{{> peticionesArticulos}}
+		</div>
 	</div>
 	<div id="salir">
-	  			{{> salirSistema}}
+		{{> salirSistema}}
 	</div>
 </template>
