@@ -2,7 +2,7 @@
 	<div class="row">
 		<div class="col s12">
 			<ul class="tabs">
-				<li class="tab col s2"><a class="active" href="#solicitudes">Solicitudes</a></li>
+				<li class="tab col s2"><a class="active" href="#solicitudes">Préstamos</a></li>
 				<li class="tab col s2"><a href="#laboratorios">Laboratorios</a></li>
 				<li class="tab col s2"><a href="#inventarios">Inventario</a></li>
 				<li class="tab col s2"><a href="#reportes">Reportes</a></li>
@@ -28,9 +28,13 @@
 		</div>
 	</div>
 	<div id="laboratorios">
-		hola
+		<h5>Solicitudes de laboratorio</h5>
+		{{> solicitudesPendientesLaboratorio}}
 	</div>
-
+	<div id="inventarios">
+		<h5>Inventario</h5>
+		{{> pantallaInventario}}
+	</div>
 	<div id="salir">
 	  			{{> salirSistema}}
 	</div>
