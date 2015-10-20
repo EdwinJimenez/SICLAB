@@ -55,6 +55,10 @@ footer
 	margin-bottom: 35px;
 }
 /*MATERIALIZE*/
+input[type=number]
+{
+  width: 70%;
+}
 /* Color del Label de los Inputs tipo TEXT */
    .input-field label {
      color: #e0e0e0;

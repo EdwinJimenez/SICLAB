@@ -1,0 +1,35 @@
+<template name="eleccionMaterialAlumno">
+	<div class="row">
+	<h4>Elección de material           </h4>
+		<div class="col s10 offset-s1">
+			<table>
+				<thead>
+					<tr class="col s12">
+						<th data-field="cantidad" class="col s2">Cantidad</th>
+						<th data-field="descripcion" class="col s9">Descripción</th>
+						<th data-field="seleccionar" class="col s1">Seleccionar</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="col s12">
+						<td class="col s2"><input type="number"></td>
+						<td class="col s9">Cautín</td>
+						<td class="col s1">
+							<p>
+								<input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+								<label for="filled-in-box"></label>
+							</p>						
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col s5 offset-s4">
+			<button class="btn waves-effect waves-light  green darken-1" type="submit" name="action">Entrar
+			</button>
+			<a class="waves-effect waves-light btn red darken-1">Cancelar</a>
+		</div>
+	</div>
+</template>
