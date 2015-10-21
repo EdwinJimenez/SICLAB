@@ -3,11 +3,11 @@ Template.pantallaLaboratorios.onRendered(function(){
 	$("#solicitudesPendientes").show("slow");
 });
 Template.pantallaLaboratorios.events({
-	"click #btnPeticiones":function(event,Template){
+	"click #btnPendientes":function(event,Template){
 		$("#solicitudesPendientes").show("slow");
 		$("#solicitudesEnProceso").hide("slow");
 	},
-	"click #btnPrestamos":function(event,Template){
+	"click #btnEnProceso":function(event,Template){
 		$("#solicitudesPendientes").hide("slow");
 		$("#solicitudesEnProceso").show("slow");
 	}

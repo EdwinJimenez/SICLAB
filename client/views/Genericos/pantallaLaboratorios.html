@@ -2,7 +2,7 @@
 	<div class="row">
 		<div class="col s12">
 			<ul class="tabs">
-				<li class="tab col s2"><a class="active" href="#solicitudes">Préstamos</a></li>
+				<li class="tab col s2"><a class="active" href="#prestamos">Préstamos</a></li>
 				<li class="tab col s2"><a href="#laboratorios">Laboratorios</a></li>
 				<li class="tab col s2"><a href="#inventarios">Inventario</a></li>
 				<li class="tab col s2"><a href="#reportes">Reportes</a></li>
@@ -10,12 +10,11 @@
 			</ul>
 		</div>
 	</div>
-
-	<div id="solicitudes" class="col s12">
-		<div id="menuSolicitudes">
+	<div id="prestamos" class="col s12">
+		<div id="menuPrestamos">
 			<ul>
-				<a class="waves-effect waves-light btn" id="btnPeticiones">Peticiones</a>
-				<a class="waves-effect waves-light btn" id="btnPrestamos">Préstamos</a>
+				<a class="waves-effect waves-light btn" id="btnPendientes">Pendientes</a>
+				<a class="waves-effect waves-light btn" id="btnEnProceso">En proceso</a>
 			</ul>
 		</div>
 		<div id="solicitudesPendientes">
@@ -40,7 +39,7 @@
 		</div>
 		<div id="sAceptadasLab">
 			<h5>Solicitudes de laboratorio</h5>
-			{{> solicitudesPendientesLaboratorio}}
+			{{> solicitudesAceptadasLaboratorio}}
 		</div>
 	</div>
 	<div id="inventarios">
