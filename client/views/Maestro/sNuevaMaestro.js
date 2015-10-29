@@ -11,5 +11,9 @@ Template.sNuevaMaestro.events({
 	"click #btnElegirMaterial":function(event,template){
 		$("#principal").hide();
 		$("#eleccionMaterial").show("slow");
-	}
+	},
+  "click #btnRegresar":function(event,template){
+    $("#principal").show();
+    $("#eleccionMaterial").hide();
+  }
 });
