@@ -1,5 +1,9 @@
+Template.solicitudesPendientes.onRendered(function(){
+	$("#atenderSolicitud").hide();
+});
 Template.solicitudesPendientes.events({
 	"click #btnAtender": function(){
-		Router.go('atenderSolicitud',{atenderSolicitud: atenderSolicitud});
+		$("#atenderSolicitud").show("slow");
+		$("#solicitudes").hide();
 	}
 });

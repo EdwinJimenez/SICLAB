@@ -1,6 +1,6 @@
 <template name="solicitudesPendientes">
 	<section>
-		<div class="row">
+		<div id= "solicitudes" class="row">
 			<div class="col s10 offset-s1" id="peticiones">
 				<table class="bordered highlight responsive-table">
 					<thead>
@@ -19,13 +19,16 @@
 							<td>02/10/2015</td>
 							<td>14:15</td>
 							<td>
-								<button class="btn waves-effect waves-light  light-blue darken-2" type="submit" name="action">Atender</button>
+								<a id= "btnAtender" class="btn waves-effect waves-light  light-blue darken-2" type="submit" name="action">Atender</a>
 								<button class="btn waves-effect waves-light amber" type="submit" name="action">Eliminar</button>
 							</td>
 						</tr>
 					</tbody>
 				</table>
 			</div>
+		</div>
+		<div id="atenderSolicitud">
+			{{> atenderSolicitud}}
 		</div>
 	</section>
 </template>
