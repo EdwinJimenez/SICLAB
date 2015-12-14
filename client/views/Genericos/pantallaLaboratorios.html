@@ -2,11 +2,11 @@
 	<div class="row">
 		<div class="col s12">
 			<ul class="tabs">
-				<li class="tab col s2"><a class="active" href="#prestamos">Préstamos</a></li>
-				<li class="tab col s2"><a href="#laboratorios">Laboratorios</a></li>
-				<li class="tab col s2"><a href="#inventarios">Inventario</a></li>
-				<li class="tab col s2"><a href="#reportes">Reportes</a></li>
-				<li class="tab col s2"><a href="#salir">Salir</a></li>
+				<li class="tab col s2"><a class="active breadcrumb" href="#prestamos">Préstamos</a></li>
+				<li class="tab col s2"><a class="breadcrumb" href="#laboratorios">Laboratorios</a></li>
+				<li class="tab col s2"><a class="breadcrumb" href="#inventarios">Inventario</a></li>
+				<li class="tab col s2"><a class="breadcrumb" href="#reportes">Reportes</a></li>
+				<li class="tab col s2"><a class="breadcrumb" href="#salir">Salir</a></li>
 			</ul>
 		</div>
 	</div>
@@ -71,6 +71,13 @@
 		<div id="peticionesArticulos">
 			<h5>Peticiones de articulos</h5>
 			{{> peticionesArticulos}}
+		</div>
+	</div>
+	<div id="reportes">
+		<div id="menuReportes">
+			<ul>
+				<a class="waves-effect waves-light btn" id="btnReporteLabs">Laboratorios</a>
+			</ul>
 		</div>
 	</div>
 	<div id="salir">

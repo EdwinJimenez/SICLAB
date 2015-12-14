@@ -1,16 +1,20 @@
 <template name="accesoAlumno">
 	<form id="accesoAlumno">
 		<div class="row">
+		<div class="col s2">Fecha: 01/12/2015</div>
 			<div class="row">
-				<div class="col s3 offset-s10">
-					<div class="switch" id="swtInternoExterno">
-						<label>
-							Off
-							<input type="checkbox">
-							<span class="lever"></span>
-							On
-						</label>
-					</div>
+				<div class="col s3 offset-s9">
+					<h6>Entrada:</h6>
+					<form action="#">
+						<div class="col s6">
+							<input name="grpRdoEntrada" type="radio" id="rdoAlumno" checked/>
+							<label for="rdoAlumno">Alumno</label>
+						</div>
+						<div class="col s6">
+							<input name="grpRdoEntrada" type="radio" id="rdoExterno" />
+							<label for="rdoExterno">Externo</label>
+						</div>
+					</form>
 				</div>
 			</div>
 			<div class="col s2">
@@ -44,15 +48,19 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="switch">
-						<label>Material: &nbsp;</label>
-						<label>
-							Si
-							<input type="checkbox">
-							<span class="lever"></span>
-							No
-						</label>
-					</div>
+					<div class="col s6 offset-s2">
+					<h6>Material:</h6>
+					<form action="#">
+						<div class="col s4">
+							<input name="grpRdoMaterial" type="radio" id="rdoSi" checked/>
+							<label for="rdoSi">Si</label>
+						</div>
+						<div class="col s4 offset-s3">
+							<input name="grpRdoMaterial" type="radio" id="rdoNo" />
+							<label for="rdoNo">No</label>
+						</div>
+					</form>
+				</div>
 				</div>
 			</section>
 			<div class="col s5" id="tecladoNumerico">

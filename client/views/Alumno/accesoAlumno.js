@@ -1,6 +1,7 @@
 Template.accesoAlumno.events({
-	"click #swtInternoExterno":function(){
-			var tipo= $('#swtInternoExterno').checked;
-			console.log(tipo);
-		}
+	"click #rdoExterno":function(event,template){
+		console.log("Externo");
+		Router.go("accesoExterno");
+	}
+
 });

@@ -60,5 +60,8 @@ Template.pantallaLaboratorios.events({
 	"click #btnAceptadasLab": function(event, Template){
 		$("#sPendientesLab").hide();
 		$("#sAceptadasLab").show("slow");
+	},
+	"click #btnReporteLabs": function(event, Template){
+		$("#reporteLaboratorios").show("slow");
 	}
 });

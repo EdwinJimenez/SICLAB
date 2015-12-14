@@ -2,16 +2,19 @@
 	<section id="accesoExterno">
 		<div class="row">
 			<div class="col s2">Fecha: 01/12/2015</div>	
-			<div class="col s3 offset-s7">
-				<div class="switch">
-					<label>
-						Interno
-						<input type="checkbox">
-						<span class="lever"></span>
-						Externo
-					</label>
+			<div class="col s3 offset-s9">
+					<h6>Entrada:</h6>
+					<form action="#">
+						<div class="col s6">
+							<input name="grpRdoEntrada2" type="radio" id="rdoAlumno2"/>
+							<label for="rdoAlumno2">Alumno</label>
+						</div>
+						<div class="col s6">
+							<input name="grpRdoEntrada2" type="radio" id="rdoExterno2" checked />
+							<label for="rdoExterno2">Externo</label>
+						</div>
+					</form>
 				</div>
-			</div>	
 		</div>
 		<div class="row">
 			<div class="col s2">
@@ -46,15 +49,19 @@
 						</select>
 					</div>
 					<div class="row">
-						<div class="switch">
-							<label>Material: &nbsp;</label>
-							<label>
-								Si
-								<input type="checkbox">
-								<span class="lever"></span>
-								No
-							</label>
+						<div class="col s6 offset-s2">
+					<h6>Material:</h6>
+					<form action="#">
+						<div class="col s4">
+							<input name="grpRdoMaterial2" type="radio" id="rdoSi2" checked/>
+							<label for="rdoSi2">Si</label>
 						</div>
+						<div class="col s4 offset-s3">
+							<input name="grpRdoMaterial2" type="radio" id="rdoNo2" />
+							<label for="rdoNo2">No</label>
+						</div>
+					</form>
+				</div>
 					</div>
 				</form>
 			</div>
