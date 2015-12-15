@@ -4,6 +4,10 @@ Template.acceso.events({
 		{
 			if($("#txtUsuario").val()=='Laboratorio')
 			Router.go("/Alumno");
+		else{
+			if($("#txtUsuario").val()=='Maestro')
+				Router.go("/pantallaMaestro");
+			}
 		}
 	}
 });

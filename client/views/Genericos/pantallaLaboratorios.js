@@ -1,13 +1,5 @@
 Template.pantallaLaboratorios.onRendered(function(){
 	$('ul.tabs').tabs();
-	$("#solicitudesPendientes").show("slow");
-	$("#pantallaInventario").show("slow");
-	$("#altaArticulos").hide();
-	$("#bajaArticulos").hide();
-	$("#peticionesPendientes").hide();
-	$("#peticionesArticulos").hide();
-	$("#sPendientesLab").show("slow");
-	$("#sAceptadasLab").hide();
 });
 Template.pantallaLaboratorios.events({
 	"click #btnPendientes":function(event,Template){

@@ -10,5 +10,6 @@ Router.route('/pantallaLaboratorios',{name:'pantallaLaboratorios'});
 /*Router.route('/atenderSolicitud',{name:'atenderSolicitud'});*/
 Router.route('/pantallaMaestro',{name: 'pantallaMaestro'});
 Router.route('/eleccionMaterial',{name: 'eleccionMaterialAlumno'});
-//Router.route('/solicitudesPendientesLaboratorio',{name: 'solicitudesPendientesLaboratorio'});
+Router.route('/solicitudesPendientesLaboratorio',{name: 'solicitudesPendientesLaboratorio'});
+
 
