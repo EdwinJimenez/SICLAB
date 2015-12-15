@@ -49,13 +49,14 @@ Template.accesoAlumno.events({
 	},
 	"click #btnDel": function(event,template){
 		$("#txtNControl").val($("#txtNControl").val().slice(0,-1));
-		//var nControl= $("#txtNControl").val().slice(0,-1);
 		$("#txtNControl").focus();
+
 	},
-	"change #txtNControl": function(event,template){
-		$("#txtNControl").on('change',function() 
-			{
-				alert("Change detected!");
-			});
+	"keydown #txtNControl": function(event,template){
+		if(Meteor.validaciones.contarOchoCaracteres())
+		{
+			//En este momento haremos la consulta SQL sobre el No. de control
+			console.log("Regrese true");
+		}
 	}
 });
