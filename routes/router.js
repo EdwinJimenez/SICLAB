@@ -11,5 +11,3 @@ Router.route('/pantallaLaboratorios',{name:'pantallaLaboratorios'});
 Router.route('/pantallaMaestro',{name: 'pantallaMaestro'});
 Router.route('/eleccionMaterial',{name: 'eleccionMaterialAlumno'});
 Router.route('/solicitudesPendientesLaboratorio',{name: 'solicitudesPendientesLaboratorio'});
-
-
