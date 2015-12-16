@@ -1,5 +1,13 @@
 Template.pantallaLaboratorios.onRendered(function(){
 	$('ul.tabs').tabs();
+	console.log("Tipo Usuario = "+Session.get("tipoUsuario"));
+	switch(Session.get("tipoUsuario"))
+	{
+		case 2: console.log("JEFE DEPTO") 
+		/*$("#selector").parent().children(":first").children(":first").hide();
+		$("#selector").parent().children(":first").children(":first").next().hide();*/
+		$("#selector").parent().children(":first").children(":first").disabled();
+	}
 });
 Template.pantallaLaboratorios.events({
 	"click #btnPendientes":function(event,Template){
