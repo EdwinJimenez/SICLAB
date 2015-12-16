@@ -7,7 +7,11 @@ Template.acceso.events({
 		else{
 			if($("#txtUsuario").val()=='Maestro')
 				Router.go("/pantallaMaestro");
+			else
+				if($("#txtUsuario").val()=='Encargado')
+				Router.go("/pantallaLaboratorios");
 			}
+
 		}
 	}
 });

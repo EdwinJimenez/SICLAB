@@ -1,6 +1,6 @@
+var material=true;
 Template.accesoAlumno.events({
 	"click #rdoExterno":function(event,template){
-		console.log("Externo");
 		Router.go("accesoExterno");
 	},
 	"click #btnMA": function(event,template){
@@ -57,5 +57,28 @@ Template.accesoAlumno.events({
 			//En este momento haremos la consulta SQL sobre el No. de control
 			console.log("Regrese true");
 		}
-	}
+	},
+	"click #rdoSi":function(event,template){
+		material=true;
+	},
+	"click #rdoNo":function(event,template){
+		material=false;
+	},
+	"click #btnEntrar": function(event,template){
+		if(material)
+		{
+			Router.go("/eleccionMaterial");
+		}
+		else
+		{
+			Materialize.toast("Bienvenido, acceso registrado.",2000,"rounded");
+			$("#txtNControl").val("");
+			$("#txtNombre").val("");
+			$("#txtCarrera").val("");
+			$("#txtSemestre").val("");
+			$("#rdoSi").prop('checked', true);
+			material=true;
+		}
+	},
+
 });
