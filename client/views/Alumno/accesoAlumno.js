@@ -50,7 +50,6 @@ Template.accesoAlumno.events({
 	"click #btnDel": function(event,template){
 		$("#txtNControl").val($("#txtNControl").val().slice(0,-1));
 		$("#txtNControl").focus();
-
 	},
 	"keydown #txtNControl": function(event,template){
 		if(Meteor.validaciones.contarOchoCaracteres())
